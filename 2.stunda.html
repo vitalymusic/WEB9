@@ -25,7 +25,7 @@
                 <td>janis@inbox.lv</td>
                 <td>+37122334455</td>
                 <td>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="active" id="val1">
                 </td>
                 <td>
                     <button>Rediģēt ✏️</button>
@@ -38,7 +38,7 @@
                 <td>anna@inbox.lv</td>
                 <td>+37122334455</td>
                 <td>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="active" id="val2">
                 </td>
                 <td>
                     <button>Rediģēt ✏️</button>
@@ -51,7 +51,7 @@
                 <td>alekss@inbox.lv</td>
                 <td>+37122334455</td>
                 <td>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="active" id="val3">
                 </td>
                 <td>
                     <button>Rediģēt ✏️</button>
@@ -64,7 +64,7 @@
                 <td>alekss@inbox.lv</td>
                 <td>+37122334455</td>
                 <td>
-                    <input type="checkbox" name="" id="">
+                    <input type="checkbox" name="active" id="val3">
                 </td>
                 <td>
                     <button>Rediģēt ✏️</button>
@@ -91,7 +91,7 @@
             <legend>Dati par jaunu lietotāju</legend>
             <div>
                 <label for="name">Jūsu vārds:</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" placeholder="piem.jānis">
             </div>
             <div>
                 <label for="email">Jūsu epasts:</label>
@@ -107,7 +107,7 @@
             </div>
             <div>
                 <label for="color">Jūsu krāsa:</label>
-                <input type="color" name="color" id="color">
+                <input type="color" name="color" id="color" >
             </div>
         </fieldset>
 
@@ -116,8 +116,8 @@
              <legend>Papildus info</legend>
             <div>
                 <label for="car">Automāšinas marka:</label>
-                <select name="car" id="car">
-                    <option value=""></option>
+                <select name="car" id="car" disabled>
+                    <option value="" ></option>
                     <option value="1">Mercedes</option>
                     <option value="2">BMW</option>
                     <option value="3">AUDI</option>
@@ -128,7 +128,7 @@
         </fieldset>
 
         <div>
-            <h5 id="jaut1">Cik daudz laika pavadāt pie datora</h5>
+            <h3 id="jaut1">Cik daudz laika pavadāt pie datora</h3>
                 <input type="radio" name="atb1" id="var1">
                 <label for="var1">Mazāk par stundu</label><br>
                 <input type="radio" name="atb1" id="var2">
@@ -142,7 +142,7 @@
         </div>
 
         <input type="hidden" value="" name="">
-        <input type="number">
+        <input type="number" min="0" placeholder="0" max="25">
 
 
         
@@ -151,7 +151,7 @@
             <input type="submit" value="Reģistrēties">
         </div>
         
-
+        <!-- minlength, maxlength,   -->
 
     </form>
 
