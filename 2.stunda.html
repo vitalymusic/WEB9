@@ -84,8 +84,77 @@
 
 
     <h2>Formas</h2>
+    <form method="post" action="https://formtester.goodbytes.be/post.php">
 
-    
+        
+        <fieldset>
+            <legend>Dati par jaunu lietotāju</legend>
+            <div>
+                <label for="name">Jūsu vārds:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Jūsu epasts:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="date">Dzimšanas datums:</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div>
+                <label for="picture">Profila bilde:</label>
+                <input type="file" name="picture" id="picture" accept="image/*">
+            </div>
+            <div>
+                <label for="color">Jūsu krāsa:</label>
+                <input type="color" name="color" id="color">
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+             <legend>Papildus info</legend>
+            <div>
+                <label for="car">Automāšinas marka:</label>
+                <select name="car" id="car">
+                    <option value=""></option>
+                    <option value="1">Mercedes</option>
+                    <option value="2">BMW</option>
+                    <option value="3">AUDI</option>
+                </select><br>
+                <input type="checkbox" name="save_car" id="save_car">
+                <label for="save_car">Saglabāt manu izvēli</label>
+            </div>
+        </fieldset>
+
+        <div>
+            <h5 id="jaut1">Cik daudz laika pavadāt pie datora</h5>
+                <input type="radio" name="atb1" id="var1">
+                <label for="var1">Mazāk par stundu</label><br>
+                <input type="radio" name="atb1" id="var2">
+                <label for="var2">2-4 stundas</label><br>
+                <input type="radio" name="atb1" id="var3">
+                <label for="var3">vairāk par 4 stundām</label><br>
+        </div>
+        <div>
+            <label for="password">Jūsu parole</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <input type="hidden" value="" name="">
+        <input type="number">
+
+
+        
+        <div>
+            <input type="reset" value="Notīrīt formas datus">
+            <input type="submit" value="Reģistrēties">
+        </div>
+        
+
+
+    </form>
+
 
 </body>
 </html>
