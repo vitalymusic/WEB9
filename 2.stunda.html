@@ -1,160 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <title>Tabulas, formas un Semantika</title>
 </head>
+
 <body>
-    <h1>Tabulas</h1>
-    <table border="1" width="700" cellpadding="5" cellspacing="0">
-        <thead>
-            <tr>
-                <td>N.p.k.</td>
-                <td>Vārds</td>
-                <td>Ēpasts</td>
-                <td>Tālrunis</td>
-                <td>Statuss</td>
-                <td>Darbības</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1.</td>
-                <td>Jānis</td>
-                <td>janis@inbox.lv</td>
-                <td>+37122334455</td>
-                <td>
-                    <input type="checkbox" name="active" id="val1">
-                </td>
-                <td>
-                    <button>Rediģēt ✏️</button>
-                    <button>Izdzēst 🧹</button>
-                </td>
-            </tr>
-            <tr>
-                <td>2.</td>
-                <td>Anna</td>
-                <td>anna@inbox.lv</td>
-                <td>+37122334455</td>
-                <td>
-                    <input type="checkbox" name="active" id="val2">
-                </td>
-                <td>
-                    <button>Rediģēt ✏️</button>
-                    <button>Izdzēst 🧹</button>
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="2">3.</td>
-                <td>Alekss</td>
-                <td>alekss@inbox.lv</td>
-                <td>+37122334455</td>
-                <td>
-                    <input type="checkbox" name="active" id="val3">
-                </td>
-                <td>
-                    <button>Rediģēt ✏️</button>
-                    <button>Izdzēst 🧹</button>
-                </td>
-            </tr>
-            <tr>
-                <!-- <td>3.</td> -->
-                <td>Alekss</td>
-                <td>alekss@inbox.lv</td>
-                <td>+37122334455</td>
-                <td>
-                    <input type="checkbox" name="active" id="val3">
-                </td>
-                <td>
-                    <button>Rediģēt ✏️</button>
-                    <button>Izdzēst 🧹</button>
-                </td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="5">
-                    Kopā lietotāju:
-                </td>
-                <td>3 lietotāji</td>
-            </tr>
-        </tfoot>
-    </table>
+    <header>
+        <img src="logo.png" alt="">
+        <h1>Lapas nosaukums</h1>
+    </header>
+    <nav>
+        <a href="./index.html">Galvenā</a>
+        <a href="./2.stunda.html">2.stunda</a>
+    </nav>
 
 
-    <h2>Formas</h2>
-    <form method="post" action="https://formtester.goodbytes.be/post.php">
+    <main>
 
-        
-        <fieldset>
-            <legend>Dati par jaunu lietotāju</legend>
-            <div>
-                <label for="name">Jūsu vārds:</label>
-                <input type="text" name="name" id="name" placeholder="piem.jānis">
+        <section>
+            <h1>Tabulas</h1>
+            <table border="1" width="700" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <td>N.p.k.</td>
+                        <td>Vārds</td>
+                        <td>Ēpasts</td>
+                        <td>Tālrunis</td>
+                        <td>Statuss</td>
+                        <td>Darbības</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Jānis</td>
+                        <td>janis@inbox.lv</td>
+                        <td>+37122334455</td>
+                        <td>
+                            <input type="checkbox" name="active" id="val1">
+                        </td>
+                        <td>
+                            <button>Rediģēt ✏️</button>
+                            <button>Izdzēst 🧹</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Anna</td>
+                        <td>anna@inbox.lv</td>
+                        <td>+37122334455</td>
+                        <td>
+                            <input type="checkbox" name="active" id="val2">
+                        </td>
+                        <td>
+                            <button>Rediģēt ✏️</button>
+                            <button>Izdzēst 🧹</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">3.</td>
+                        <td>Alekss</td>
+                        <td>alekss@inbox.lv</td>
+                        <td>+37122334455</td>
+                        <td>
+                            <input type="checkbox" name="active" id="val3">
+                        </td>
+                        <td>
+                            <button>Rediģēt ✏️</button>
+                            <button>Izdzēst 🧹</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- <td>3.</td> -->
+                        <td>Alekss</td>
+                        <td>alekss@inbox.lv</td>
+                        <td>+37122334455</td>
+                        <td>
+                            <input type="checkbox" name="active" id="val3">
+                        </td>
+                        <td>
+                            <button>Rediģēt ✏️</button>
+                            <button>Izdzēst 🧹</button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            Kopā lietotāju:
+                        </td>
+                        <td>3 lietotāji</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formas</h2>
+            <form method="post" action="https://formtester.goodbytes.be/post.php">
+
+                <fieldset>
+                    <legend>Dati par jaunu lietotāju</legend>
+                    <div>
+                        <label for="name">Jūsu vārds:</label>
+                        <input type="text" name="name" id="name" placeholder="piem.jānis">
+                    </div>
+                    <div>
+                        <label for="email">Jūsu epasts:</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="date">Dzimšanas datums:</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label for="picture">Profila bilde:</label>
+                        <input type="file" name="picture" id="picture" accept="image/*">
+                    </div>
+                    <div>
+                        <label for="color">Jūsu krāsa:</label>
+                        <input type="color" name="color" id="color">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Papildus info</legend>
+                    <div>
+                        <label for="car">Automāšinas marka:</label>
+                        <select name="car" id="car" disabled>
+                            <option value=""></option>
+                            <option value="1">Mercedes</option>
+                            <option value="2">BMW</option>
+                            <option value="3">AUDI</option>
+                        </select><br>
+                        <input type="checkbox" name="save_car" id="save_car">
+                        <label for="save_car">Saglabāt manu izvēli</label>
+                    </div>
+                </fieldset>
+                <div>
+                    <h3 id="jaut1">Cik daudz laika pavadāt pie datora</h3>
+                    <input type="radio" name="atb1" id="var1">
+                    <label for="var1">Mazāk par stundu</label><br>
+                    <input type="radio" name="atb1" id="var2">
+                    <label for="var2">2-4 stundas</label><br>
+                    <input type="radio" name="atb1" id="var3">
+                    <label for="var3">vairāk par 4 stundām</label><br>
+                </div>
+                <div>
+                    <label for="password">Jūsu parole</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <input type="hidden" value="" name="">
+                <input type="number" min="0" placeholder="0" max="25">
+
+                <div>
+                    <input type="reset" value="Notīrīt formas datus">
+                    <input type="submit" value="Reģistrēties">
+                </div>
+
+                <!-- minlength, maxlength,   -->
+            </form>
+        </section>
+        <section>
+            <h2>Semantiskie elementi</h2>
+            <div class="intro">
+                <p>Semantiskais HTML uzlabo tīmekļa vietnes piekļūstamību (accessibility), SEO optimizāciju un koda
+                    lasāmību, piešķirot katram elementam konkrētu nozīmi.</p>
             </div>
-            <div>
-                <label for="email">Jūsu epasts:</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div>
-                <label for="date">Dzimšanas datums:</label>
-                <input type="date" name="date" id="date">
-            </div>
-            <div>
-                <label for="picture">Profila bilde:</label>
-                <input type="file" name="picture" id="picture" accept="image/*">
-            </div>
-            <div>
-                <label for="color">Jūsu krāsa:</label>
-                <input type="color" name="color" id="color" >
-            </div>
-        </fieldset>
+
+            <table>
+    <caption>Visu HTML semantisko elementu kopsavilkums</caption>
+    <thead>
+      <tr>
+        <th style="width: 18%;">Elements</th>
+        <th style="width: 16%;">Kategorija</th>
+        <th style="width: 40%;">Apraksts un nozīme</th>
+        <th style="width: 26%;">Pielietojums</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Lapas Struktūra -->
+      <tr>
+        <td><span class="tag">&lt;header&gt;</span></td>
+        <td><span class="category cat-structure">Struktūra</span></td>
+        <td>Lapas vai sadaļas ievaddaļa (galvene).</td>
+        <td>Navigācija, logotips, virsraksti.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;nav&gt;</span></td>
+        <td><span class="category cat-structure">Struktūra</span></td>
+        <td>Galvenais navigācijas saišu bloks.</td>
+        <td>Vietnes izvēlne, saišu saraksti.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;main&gt;</span></td>
+        <td><span class="category cat-structure">Struktūra</span></td>
+        <td>Lapas unikālais un galvenais saturs.</td>
+        <td>Izmanto vienreiz katrā lapā.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;article&gt;</span></td>
+        <td><span class="category cat-content">Satura bloks</span></td>
+        <td>Neatkarīgs, pašpietiekams satura datu bloks.</td>
+        <td>Raksti, ziņas, komentāri, kartītes.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;section&gt;</span></td>
+        <td><span class="category cat-content">Satura bloks</span></td>
+        <td>Tematiski sagrupēta satura sadaļa.</td>
+        <td>Lapas nodaļas ar savu virsrakstu.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;aside&gt;</span></td>
+        <td><span class="category cat-structure">Struktūra</span></td>
+        <td>Sānu josla vai netieši saistīts saturs.</td>
+        <td>Reklāmas, papildinformācija, saites.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;footer&gt;</span></td>
+        <td><span class="category cat-structure">Struktūra</span></td>
+        <td>Lapas vai sadaļas kājene.</td>
+        <td>Autortiesības, kontakti, juridiskās saites.</td>
+      </tr>
+
+      <!-- Teksta un Satura Elementi -->
+      <tr>
+        <td><span class="tag">&lt;h1&gt; - &lt;h6&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Virsraksti no svarīgākā (h1) līdz vismazāk svarīgajam (h6).</td>
+        <td>Dokumenta un sadaļu virsraksti.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;p&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Teksta rindkopa (paragrāfs).</td>
+        <td>Pamata teksta bloki.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;blockquote&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Apjomīgs citāts no cita avota.</td>
+        <td>Garāki ārējie citāti ar atkāpi.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;q&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Īss iekļautais (inline) citāts.</td>
+        <td>Teikuma ietvaros citēts teksts.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;cite&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Atsauce uz darba (grāmatas, filmas, raksta) nosaukumu.</td>
+        <td>Citētā avota nosaukums.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;code&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Datora koda fragments.</td>
+        <td>Programmēšanas koda izcelšana.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;pre&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Iepriekš formatēts teksts (saglabā atstarpes un jaunas rindas).</td>
+        <td>Koda bloki, ASCII māksla.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;mark&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Iezīmēts vai izcelts teksts.</td>
+        <td>Meklēšanas rezultātu izcelšana.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;time&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Mašīnnolasāms datums un laiks.</td>
+        <td>Publikācijas datumi, notikumu laiki.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;address&gt;</span></td>
+        <td><span class="category cat-text">Teksts</span></td>
+        <td>Autora vai īpašnieka kontaktinformācija.</td>
+        <td>E-pasts, fiziskā adrese, tālrunis.</td>
+      </tr>
+
+      <!-- Mediji un Interaktivitāte -->
+      <tr>
+        <td><span class="tag">&lt;figure&gt;</span></td>
+        <td><span class="category cat-media">Mediji</span></td>
+        <td>Neatkarīgs mediju konteiners.</td>
+        <td>Attēli, diagrammas, koda piemēri.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;figcaption&gt;</span></td>
+        <td><span class="category cat-media">Mediji</span></td>
+        <td>Paraksts un paskaidrojums <code>&lt;figure&gt;</code> elementam.</td>
+        <td>Attēla vai diagrammas apraksts.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;details&gt;</span></td>
+        <td><span class="category cat-content">Interaktīvs</span></td>
+        <td>Atverams un aizverams papildinformācijas bloks.</td>
+        <td>Biežāk uzdotie jautājumi (FAQ).</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;summary&gt;</span></td>
+        <td><span class="category cat-content">Interaktīvs</span></td>
+        <td>Virsraksts vai poga elementam <code>&lt;details&gt;</code>.</td>
+        <td>Klikšķināmais FAQ jautājums.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;dialog&gt;</span></td>
+        <td><span class="category cat-content">Interaktīvs</span></td>
+        <td>Dialoglodziņš vai modālais logs.</td>
+        <td>Paziņojumu un apstiprinājumu logi.</td>
+      </tr>
+
+      <!-- Formas Elementi -->
+      <tr>
+        <td><span class="tag">&lt;form&gt;</span></td>
+        <td><span class="category cat-form">Forma</span></td>
+        <td>Datu ievades forma lietotājam.</td>
+        <td>Ielogošanās, atsauksmes, meklēšana.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;label&gt;</span></td>
+        <td><span class="category cat-form">Forma</span></td>
+        <td>Paskaidrojošs teksts formas ievades laukam.</td>
+        <td>Savieno tekstu ar &lt;input&gt;.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;fieldset&gt;</span></td>
+        <td><span class="category cat-form">Forma</span></td>
+        <td>Formas lauku tematiskā grupa.</td>
+        <td>Sadaļas formā (piem. "Piegādes adrese").</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;legend&gt;</span></td>
+        <td><span class="category cat-form">Forma</span></td>
+        <td>Virsraksts elementam <code>&lt;fieldset&gt;</code>.</td>
+        <td>Formas grupas nosaukums.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;output&gt;</span></td>
+        <td><span class="category cat-form">Forma</span></td>
+        <td>Aprēķina vai darbības rezultāta attēlošana.</td>
+        <td>Kalkulatoru un formu rezultāti.</td>
+      </tr>
+
+      <!-- Tabulu Elementi -->
+      <tr>
+        <td><span class="tag">&lt;table&gt;</span></td>
+        <td><span class="category cat-table">Tabula</span></td>
+        <td>Galvenais tabulas konteiners.</td>
+        <td>Tabulāru datu attēlošana.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;caption&gt;</span></td>
+        <td><span class="category cat-table">Tabula</span></td>
+        <td>Tabulas nosaukums vai apraksts.</td>
+        <td>Tabulas virsraksts.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;thead&gt;</span></td>
+        <td><span class="category cat-table">Tabula</span></td>
+        <td>Tabulas galvenes rindu grupa.</td>
+        <td>Kolonnu nosaukumu ietvars.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;tbody&gt;</span></td>
+        <td><span class="category cat-table">Tabula</span></td>
+        <td>Tabulas pamata datu rindu grupa.</td>
+        <td>Galvenā satura ietvars.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;tfoot&gt;</span></td>
+        <td><span class="category cat-table">Tabula</span></td>
+        <td>Tabulas kājenes rindu grupa.</td>
+        <td>Kopsavilkuma/summas ietvars.</td>
+      </tr>
+      <tr>
+        <td><span class="tag">&lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</span></td>
+        <td><span class="category cat-table">Tabula</span></td>
+        <td>Tabulas rinda (tr), galvenes šūna (th) un datu šūna (td).</td>
+        <td>Datu struktūras šūnas.</td>
+      </tr>
+    </tbody>
+  </table>
+            <!-- <article>
+            <aside>
+            <details>
+            <figcaption>
+            <figure>
+            <footer>
+            <header>
+            <main>
+            <mark>
+            <nav>
+            <section>
+            <summary>
+            <time> -->
+        </section>
+        <section>
+            <h3>Satura iekļaušana lapā</h3>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fwikPE84fBY?si=j7uDiI423xvCVLdA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe width="100%" height="450"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.6676083207603!2d24.158896076718754!3d56.93736247354563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf2881ab3a2d%3A0x38f05fb5534b5b16!2zRWlyb3BhcyBUxIFsbcSBY8SrYmFzIGNlbnRycw!5e0!3m2!1slv!2slv!4v1788195327829!5m2!1slv!2slv"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            <audio src="./muzika.mp3"></audio>
+
+        </section>
+
+    </main>
+    <footer>
+        Visas tiesības pieder man :)
+    </footer>
 
 
-        <fieldset>
-             <legend>Papildus info</legend>
-            <div>
-                <label for="car">Automāšinas marka:</label>
-                <select name="car" id="car" disabled>
-                    <option value="" ></option>
-                    <option value="1">Mercedes</option>
-                    <option value="2">BMW</option>
-                    <option value="3">AUDI</option>
-                </select><br>
-                <input type="checkbox" name="save_car" id="save_car">
-                <label for="save_car">Saglabāt manu izvēli</label>
-            </div>
-        </fieldset>
-
-        <div>
-            <h3 id="jaut1">Cik daudz laika pavadāt pie datora</h3>
-                <input type="radio" name="atb1" id="var1">
-                <label for="var1">Mazāk par stundu</label><br>
-                <input type="radio" name="atb1" id="var2">
-                <label for="var2">2-4 stundas</label><br>
-                <input type="radio" name="atb1" id="var3">
-                <label for="var3">vairāk par 4 stundām</label><br>
-        </div>
-        <div>
-            <label for="password">Jūsu parole</label>
-            <input type="password" name="password" id="password">
-        </div>
-
-        <input type="hidden" value="" name="">
-        <input type="number" min="0" placeholder="0" max="25">
-
-
-        
-        <div>
-            <input type="reset" value="Notīrīt formas datus">
-            <input type="submit" value="Reģistrēties">
-        </div>
-        
-        <!-- minlength, maxlength,   -->
-
-    </form>
 
 
 </body>
+
 </html>
