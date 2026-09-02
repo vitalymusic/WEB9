@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Komentārs */
 
 /* CSS Selektori */
@@ -61,3 +63,109 @@ td{
 tr:nth-child(2n){
     background-color: #337de43e;
 }
+
+
+/* Elementu BOX modelis */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}    
+
+header{
+   width: 450px;
+   /* max-width: 1000px;
+   min-width: 100px; */
+
+   height: 200px;
+   /* max-height: max-content; */
+
+   margin:50px;
+   margin-top: 20px;
+   margin-bottom:10px;
+   margin: 20px auto;
+  /* Ja bloka elements neazņem visu platumu un to ir jānovieto centrā izmantojam margin:auto */
+
+  padding:30px;
+  padding:10px 30px;
+
+  
+
+}
+table{
+    margin:30px auto;
+}
+
+section{
+    /* border:5px solid #fff; */
+    border-top:5px solid #fff;
+    border-bottom:5px solid #de0e0e;
+
+    border-radius:  20px 20px 0px 0px;
+
+}
+
+header img{
+    display: block;
+    margin: 16px auto;
+}
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+nav{
+    background-color: #CACFD6;
+    padding: 10px 30px;
+}
+
+
+/* Flexbox - lai varētu sakārtot elementus konteinerī */
+
+nav{
+     display: flex;
+     height: 100px;
+     flex-direction: row;
+     justify-content: center;
+     /* justify-content: space-around; */
+     align-items: center;
+
+}
+
+nav a{
+    margin:0px 20px;
+}
+
+
+/* Teksta noformēšana */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-size: 14pt;
+}
+
+h1, h2, h3, h4, h5{
+    margin: 20px 0px;
+}
+header{
+    height: auto;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: oblique;
+    letter-spacing: 0px;
+    text-align: center;
+    /* text-decoration: underline double rgb(208, 255, 0);
+    text-transform: uppercase; */
+
+    padding-right: 5rem;
+    font-family: "Jim Nightshade", cursive;
+
+}
+h2{
+   font-size: 2.5rem; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
