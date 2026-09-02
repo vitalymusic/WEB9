@@ -21,7 +21,10 @@
 <body>
     <header style="background-color: rgb(5, 58, 105);">
         <img src="logo.png" alt="">
-        <h1>Lapas nosaukums</h1>
+        <div>
+            <h1>Lapas nosaukums</h1>
+        </div>
+        
     </header>
     <nav>
         <a href="./index.html">Galvenā</a>
@@ -31,7 +34,7 @@
 
     <main>
 
-        <section>
+        <section id="s1">
             <h1>Tabulas</h1>
             <table border="1" width="700" cellpadding="5" cellspacing="0">
                 <thead>
@@ -54,8 +57,8 @@
                             <input type="checkbox" name="active" id="val1">
                         </td>
                         <td>
-                            <button>Rediģēt ✏️</button>
-                            <button>Izdzēst 🧹</button>
+                            <button class="btn_edit">Rediģēt ✏️</button>
+                            <button class="btn_delete">Izdzēst 🧹</button>
                         </td>
                     </tr>
                     <tr>
@@ -67,8 +70,8 @@
                             <input type="checkbox" name="active" id="val2">
                         </td>
                         <td>
-                            <button>Rediģēt ✏️</button>
-                            <button>Izdzēst 🧹</button>
+                            <button class="btn_edit">Rediģēt ✏️</button>
+                            <button class="btn_delete">Izdzēst 🧹</button>
                         </td>
                     </tr>
                     <tr>
@@ -80,8 +83,8 @@
                             <input type="checkbox" name="active" id="val3">
                         </td>
                         <td>
-                            <button>Rediģēt ✏️</button>
-                            <button>Izdzēst 🧹</button>
+                            <button class="btn_edit">Rediģēt ✏️</button>
+                            <button class="btn_delete">Izdzēst 🧹</button>
                         </td>
                     </tr>
                     <tr>
@@ -93,8 +96,8 @@
                             <input type="checkbox" name="active" id="val3">
                         </td>
                         <td>
-                            <button>Rediģēt ✏️</button>
-                            <button>Izdzēst 🧹</button>
+                            <button class="btn_edit">Rediģēt ✏️</button>
+                            <button class="btn_delete">Izdzēst 🧹</button>
                         </td>
                     </tr>
                 </tbody>
@@ -109,7 +112,7 @@
             </table>
         </section>
 
-        <section>
+        <section id="s2">
             <h2>Formas</h2>
             <form method="post" action="https://formtester.goodbytes.be/post.php">
 
@@ -174,7 +177,7 @@
                 <!-- minlength, maxlength,   -->
             </form>
         </section>
-        <section>
+        <section id="s3">
             <h2>Semantiskie elementi</h2>
             <div class="intro">
                 <p>Semantiskais HTML uzlabo tīmekļa vietnes piekļūstamību (accessibility), SEO optimizāciju un koda
@@ -415,7 +418,7 @@
             <summary>
             <time> -->
         </section>
-        <section>
+        <section id="s4">
             <h3>Satura iekļaušana lapā</h3>
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/fwikPE84fBY?si=j7uDiI423xvCVLdA"

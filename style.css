@@ -1,3 +1,63 @@
 /* Komentārs */
 
+/* CSS Selektori */
 
+body{
+    background-color: #5BC0EB;
+}
+h1,h2,h3{
+    color:#E55934;
+    text-align: center;
+}
+
+header h1{
+    color:#fff;
+}
+/* header > h1{
+    Strādā ar tiešiem pēctečiem
+} */
+
+button{
+    border:1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn_edit{
+    background-color: #9BC53D;
+}
+button.btn_delete{
+    background-color: #E55934;
+}
+
+section{
+    margin:20px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+#s1{
+    background-color: #DCD6F7;
+}
+#s2{
+     background-color: #A6B1E1;
+}
+#s3{
+ background-color: #CACFD6;
+}
+#s4{
+ background-color: #D6E5E3;
+}
+
+
+table,tr,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    padding: 5px;
+}
+
+tr:nth-child(2n){
+    background-color: #337de43e;
+}
