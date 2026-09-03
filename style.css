@@ -169,3 +169,54 @@ h2{
     font-weight: 700;
 }
 
+
+/* Elementu pozicionēšana */
+header{
+    position: static; 
+    /* Noklusēta vērtība */
+    position: relative;
+    /* top:50px;
+    left:-50px;
+    bottom:20px;
+    right:20px; */
+
+    position: absolute;
+    /* right:10px;
+    bottom:10px; */
+    position: relative;
+    width: 100%;
+    height:200px;
+
+
+}
+header h1{
+    position: absolute;
+    top:3rem;
+    left:45%;
+    color:red
+}
+header img{
+    position: absolute;
+    top:2rem;
+    left:40%;
+}
+
+.absolute{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+}
+
+.dialog{
+     position: fixed;
+     top:0;
+     width: 100vw;
+     height: 100vh;
+     background-color: #d6e5e39f;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     display:none;
+}
+
+
