@@ -219,4 +219,10 @@ header img{
      display:none;
 }
 
+nav{
+    position: sticky;
+    top:0px;
+    
+}
+
 
