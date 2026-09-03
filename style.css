@@ -193,18 +193,21 @@ header h1{
     position: absolute;
     top:3rem;
     left:45%;
-    color:red
+    color:red;
+    z-index: 3;
 }
 header img{
     position: absolute;
     top:2rem;
     left:40%;
+    z-index: 1;
 }
 
 .absolute{
     position: fixed;
     bottom:20px;
     right:20px;
+    z-index:-1;
 }
 
 .dialog{
@@ -222,7 +225,64 @@ header img{
 nav{
     position: sticky;
     top:0px;
-    
+    z-index: 100;
+
 }
+
+/* pseudo klases, pseudo elementi */
+
+/* elementu reakcija uz lietotāju */
+
+
+header img:hover{
+    /* top:-5px; */
+}
+header h1:active{
+    color:green;
+}
+
+input:focus-visible{
+    outline: 2px solid red;
+    padding:5px;
+}
+input:invalid{
+    background-color: red;
+
+}
+
+
+h1,h2::after{
+    content:"";
+}
+h1,h2::before{
+    content:"";
+    /* width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #de0e0e; */
+}
+
+h2::first-letter{
+    /* color:#5BC0EB; */
+    font-size:7rem
+}
+
+
+/* elementu transformācija un filtri  */
+
+header img{
+    transform: rotate(-10deg) scale(1.7) translate(0px,0px);
+}
+
+header div{
+    perspective: 400px;
+}
+header h1{
+    transform: rotateY(10deg);
+}
+
+
+
+
 
 
